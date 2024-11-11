@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Health AI</title>
+</head>
+<body class="bg-neutral-700 flex">
+    <div class="flex h-screen w-screen transition-all duration-200" x-data="{ open: true }">
+        <!-- Sidebar -->
+        <div class="bg-black transition-all duration-200 h-screen overflow-hidden" :class="open ? 'w-1/3' : 'w-0'">
+            <p class="p-4 text-center text-white text-3xl font-semibold text-yellow-800">Health <span class="text-blue-500">AI</span></p>
+        </div>
+        
+        <!-- Toggle button -->
+        <div>
+            <button class="text-white" @click="open = !open">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2 mt-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                </svg>
+            </button>
+        </div>
+    </div>    
+</body>
